@@ -14,7 +14,7 @@ enum BacktestStatus {
 
 structure Backtest {
     id: Long
-    strategy: AlgoTraderStrategy
+    strategy: Document
     OHLCVDatasetsFindAggregatedRequest: Document
     status: BacktestStatus
     progression: Float
@@ -23,7 +23,7 @@ structure Backtest {
 }
 
 structure BacktestCreate {
-    strategy: AlgoTraderStrategy
+    strategy: Document
     OHLCVDatasetsFindAggregatedRequest: Document
 }
 
